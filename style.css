@@ -141,3 +141,10 @@ span{
     }
     
 }
+@media (max-width: 479px) {
+    .card{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
