@@ -29,7 +29,7 @@
                      <input type="password" placeholder="PASSWORD" required>
                    </div>  
                     <button type="submit" class="submit-btn">Submit</button>
-                    <input type="checkbox"><span>Remember Me</span>
+                    <input type="checkbox"><span>Show Password</span>
                 </form>
                 <button type="button" class="btn-flip" onclick="openRegister()">Im New Here</button>
                 <a href="">Forgot Password</a>
@@ -47,7 +47,8 @@
                         </div>
                         <div class="input-box">
                             <em class="fas fa-phone"></em>
-                            <input type="phone" placeholder="CONTACT NO" required>
+                            <input type="tel" name="mobile"  id="mobile" pattern="[789][0-9]{9}" placeholder="CONTACT NO" oninvalid="this.setCustomValidity('Phone number should contain 10 digits!')"
+                            onvalid="this.setCustomValidity('')"required>
                         </div>
                         <div class="input-box">
                             <em class="fas fa-lock"></em>
@@ -58,7 +59,7 @@
                             <input type="password" placeholder="CONFIRM PASSWORD" required>
                         </div>
                         <button type="submit" class="submit-btn">Submit</button>
-                        <input type="checkbox"><span>Remember Me</span>
+                        <input type="checkbox"><span>Show Password</span>
                     </form>
                     <button type="button" class="btn-flip" onclick="openLogin()">i have an account</button>
                     </div>
