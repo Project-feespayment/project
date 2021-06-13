@@ -47,8 +47,7 @@
                         </div>
                         <div class="input-box">
                             <em class="fas fa-phone"></em>
-                            <input type="tel" name="mobile"  id="mobile" pattern="[789][0-9]{9}" placeholder="CONTACT NO" oninvalid="this.setCustomValidity('Phone number should contain 10 digits!')"
-                            onvalid="this.setCustomValidity('')"required>
+                            <input type="tel" name="mobile"  id="mobile" pattern="^\d{10}$" placeholder="CONTACT NO" oninvalid="this.setCustomValidity('Phone number should contain 10 digits!')" oninput="this.setCustomValidity('')" required>
                         </div>
                         <div class="input-box">
                             <em class="fas fa-lock"></em>
