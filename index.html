@@ -26,10 +26,10 @@
                     </div>
                    <div class="input-box">
                      <em class="fas fa-lock"></em>
-                     <input type="password" placeholder="PASSWORD" required>
+                     <input type="password" placeholder="PASSWORD" class="passcode1" required>
                    </div>  
                     <button type="submit" class="submit-btn">Submit</button>
-                    <input type="checkbox"><span>Show Password</span>
+                    <input type="checkbox" id="logcheck" onclick="passVisible()" ><span>Show Password</span>
                 </form>
                 <button type="button" class="btn-flip" onclick="openRegister()">Im New Here</button>
                 <a href="">Forgot Password</a>
@@ -51,14 +51,14 @@
                         </div>
                         <div class="input-box">
                             <em class="fas fa-lock"></em>
-                            <input type="password" placeholder="PASSWORD" required>
+                            <input type="password" placeholder="PASSWORD" class="passcode" required>
                         </div>
                         <div class="input-box">
                             <em class="fas fa-lock"></em>
-                            <input type="password" placeholder="CONFIRM PASSWORD" required>
+                            <input type="password" placeholder="CONFIRM PASSWORD" class="passcode" required>
                         </div>
                         <button type="submit" class="submit-btn">Submit</button>
-                        <input type="checkbox"><span>Show Password</span>
+                        <input type="checkbox" id="regcheck" onclick="passVisible1()" ><span>Show Password</span>
                     </form>
                     <button type="button" class="btn-flip" onclick="openLogin()">i have an account</button>
                     </div>
